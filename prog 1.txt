@@ -1,0 +1,16 @@
+
+class fruit:
+    name = "water melon"
+    def flavour(self):
+        print("flavour")
+    def colour(self):
+        print("colour")
+s1 = fruit()
+s1.flavour()
+s1.colour()
+print(s1.name)
+output:
+colour
+Flavour
+water melon
+    
