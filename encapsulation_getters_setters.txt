@@ -1,0 +1,21 @@
+class Student:
+    def __init__(self, name, marks):
+        self.__name = name
+        self.__marks = marks
+
+    def get_name(self):
+        return self.__name
+
+    def set_marks(self, marks):
+        if 0 <= marks <= 100:
+            self.__marks = marks
+        else:
+            print("Marks must be between 0 and 100")
+
+    def display(self):
+        print(self.__name, self.__marks)
+
+s = Student("Ravi", 85)
+s.display()
+s.set_marks(92)
+s.display()

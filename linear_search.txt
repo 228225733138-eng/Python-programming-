@@ -1,0 +1,8 @@
+def linear_search(items, target):
+    for i, value in enumerate(items):
+        if value == target:
+            return i
+    return -1
+
+data = [10, 20, 30, 40, 50]
+print(linear_search(data, 30))

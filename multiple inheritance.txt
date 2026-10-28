@@ -1,0 +1,8 @@
+class Camera:
+    def take_photo(self): print("Photo captured")
+class Phone:
+    def call(self): print("Calling")
+class Smartphone(Camera, Phone):
+    pass
+
+s = Smartphone(); s.take_photo(); s.call()

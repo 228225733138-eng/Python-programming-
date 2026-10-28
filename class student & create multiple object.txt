@@ -1,0 +1,14 @@
+class Student:
+    def __init__(self, name, roll_no, course):
+        self.name = name
+        self.roll_no = roll_no
+        self.course = course
+
+    def display(self):
+        print(self.name, self.roll_no, self.course)
+
+s1 = Student("Ravi", 101, "CSE")
+s2 = Student("Priya", 102, "CSE")
+s3 = Student("Arun", 103, "ECE")
+for student in (s1, s2, s3):
+    student.display()

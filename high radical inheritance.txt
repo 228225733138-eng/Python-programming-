@@ -1,0 +1,10 @@
+# Hierarchical inheritance: multiple child classes inherit from one parent.
+class Animal:
+    def eat(self): print("Eating")
+class Dog(Animal):
+    def bark(self): print("Barking")
+class Cat(Animal):
+    def meow(self): print("Meowing")
+
+dog = Dog(); dog.eat(); dog.bark()
+cat = Cat(); cat.eat(); cat.meow()

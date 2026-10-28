@@ -1,0 +1,9 @@
+# Class and object example (COE/class-object exercise).
+class College:
+    def __init__(self, name, code):
+        self.name = name
+        self.code = code
+    def display(self): print("College:", self.name, "Code:", self.code)
+
+college = College("KPRIT", "H30049131")
+college.display()

@@ -1,0 +1,14 @@
+class Parent:
+    def __init__(self):
+        self.college = "KPRIT"
+        self.location = "Hyderabad"
+
+class Student(Parent):
+    def __init__(self, name):
+        super().__init__()
+        self.name = name
+
+s = Student("Ravi")
+print("Name:", s.name)
+print("College:", s.college)
+print("Location:", s.location)

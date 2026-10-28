@@ -1,0 +1,8 @@
+class Grandparent:
+    def house(self): print("Family house")
+class Parent(Grandparent):
+    def car(self): print("Family car")
+class Child(Parent):
+    def bike(self): print("Child's bike")
+
+c = Child(); c.house(); c.car(); c.bike()
